@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIKE. Just Finish it</title>
+    <!-- links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!--==================     TOP UTILITY BAR     ==================-->
+    <div class="top-bar">
+        <div class="inner">
+            <div class="top-right"></div>
+            <div class="top-left">
+                <a href="#">Help</a>
+                <span class="seperator">|</span>
+                <a href="#">Sign Up</a>
+                <span class="seperator">|</span>
+                <a href="#">Log In</a>
+            </div>
+        </div>
+    </div>
+
+    <!--==================     INNER NAVIGATION BAR     ==================-->
+    <div class="inner-bar">
+        <div class="items">
+            <div class="logo">
+                <img style="width: 58px; height: 58px;"
+                    src="https://prod-assets.nike.in/NIKE/nes-nike-reloaded-svc/static/assets/images/nike-logo-192x192.svg"
+                    alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a class="links" href="#">New & Featured</a>
+                <a class="links" href="#">Men</a>
+                <a class="links" href="#">Women</a>
+                <a class="links" href="#">Kids</a>
+                <a class="links" href="#">Jordan</a>
+            </div>
+            <div class="nav-right">
+                <div class="search">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px"
+                        fill="none">
+                        <path stroke="#111111" stroke-width="1.5"
+                            d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853">
+                        </path>
+                    </svg>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="favourite">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="transparent" class="">
+                        <path stroke="#111111" stroke-width="1.5"
+                            d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451">
+                        </path>
+                    </svg>
+                </div>
+                <div class="cart">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px"
+                        fill="transparent">
+                        <path stroke="#111111" stroke-width="1.5"
+                            d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5">
+                        </path>
+                    </svg>
+                </div>
+
+                <!-- Hamburger Menu (mobile only) -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <!-- Mobile Slide-in Menu -->
+                <div class="mobile-overlay"></div>
+                <div class="mobile-menu">
+                    <label for="menu-toggle" class="close-btn">&times;</label>
+                    <a href="#">New & Featured</a>
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Kids</a>
+                    <a href="#">Jordan</a>
+                    <hr>
+                    <a href="#">Help</a>
+                    <a href="#">Sign Up</a>
+                    <a href="#">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==================     Carousel     ==================-->
+    <div class="movingelement">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="carouselp">Get Free Delivery in 2-4 days. Easy Returns & Size Exchanges.Shop Now</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="carouselp">For orders placed before 30 January 2026, you can track and manage themhere</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==================     HERO CAROUSEL     ==================-->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assests/shoes1.jpg" class="d-block w-100 hero-img" alt="Slide 1">
+                <div class="hero-overlay">
+                    <h1 class="hero-title">UNBEATABLE</h1>
+                    <p class="hero-subtitle">Dominate every move at any moment in Nike Domain 3.</p>
+                    <a href="#" class="hero-btn">Explore</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assests/shoes2.jpg" class="d-block w-100 hero-img" alt="Slide 2">
+                <div class="hero-overlay">
+                    <h1 class="hero-title">JUST DO IT</h1>
+                    <p class="hero-subtitle">Push your limits with the latest Nike collection.</p>
+                    <a href="#" class="hero-btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assests/shoes3.jpg" class="d-block w-100 hero-img" alt="Slide 3">
+                <div class="hero-overlay">
+                    <h1 class="hero-title">AIR MAX</h1>
+                    <p class="hero-subtitle">Step into the future of comfort and style.</p>
+                    <a href="#" class="hero-btn">Discover</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!--==================     Featured     ==================-->
+    <div class="featured">
+        <h2>Featured</h2>
+    </div>
+
+    <div class="featured-container">
+        <div><img src="./assests/pic01.png" alt="pic01"></div>
+        <div><img src="./assests/pic02.png" alt="pic02"></div>
+        <div><img src="./assests/pic03.png" alt="pic03"></div>
+        <div><img src="./assests/pic04.jpg" alt="pic04"></div>
+    </div>
+
+    <!--==================     Shop By Sport     ==================-->
+    <div class="shopFilter">
+        <h2>Shop By Sport</h2>
+    </div>
+    <div class="sport-scroll-wrapper">
+        <div class="sport-cards">
+            <div class="sport-card">
+                <img src="./assests/pic05.png" alt="Cricket">
+                <p>Cricket</p>
+            </div>
+            <div class="sport-card">
+                <img src="./assests/pic06.png" alt="Running">
+                <p>Basketball</p>
+            </div>
+            <div class="sport-card">
+                <img src="./assests/pic07.png" alt="Training">
+                <p>Running</p>
+            </div>
+            <div class="sport-card">
+                <img src="./assests/pic08.png" alt="Sportswear">
+                <p>Training</p>
+            </div>
+            <div class="sport-card">
+                <img src="./assests/pic09.png" alt="Basketball">
+                <p>Sports Wear</p>
+            </div>
+            <div class="sport-card">
+                <img src="./assests/pic10.png" alt="Basketball">
+                <p>FootBall</p>
+            </div>
+        </div>
+    </div>
+
+    <!--==================     APP QR     ==================-->
+    <div class="app-qr">
+        <img src="./assests/pic11.png" alt="App QR">
+    </div>
+
+    <!--==================     FOOTER     ==================-->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span>© Simple Copy</span>
+            <a href="#">Terms of Use</a>
+            <a href="#">Nike Privacy Policy</a>
+            <a href="#">Store Claim Policy</a>
+        </div>
+    </footer>
+
+    <!--==================     Script     ==================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
